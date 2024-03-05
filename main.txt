@@ -1,0 +1,57 @@
+import math
+
+class AdvancedCalculator:
+    def __init__(self):
+        pass
+
+    def add(self, a, b):
+        return a + b
+
+    def subtract(self, a, b):
+        return a - b
+
+    def multiply(self, a, b):
+        return a * b
+
+    def divide(self, a, b):
+        if b == 0:
+            return "Error: Division by zero"
+        return a / b
+
+    def sin(self, angle):
+        return math.sin(math.radians(angle))
+
+    def cos(self, angle):
+        return math.cos(math.radians(angle))
+
+    def tan(self, angle):
+        return math.tan(math.radians(angle))
+
+    def log(self, base, x):
+        return math.log(x, base)
+
+    def ln(self, x):
+        return math.log(x)
+
+    def exponent(self, x):
+        return math.exp(x)
+
+    def square_root(self, x):
+        return math.sqrt(x)
+
+    def factorial(self, x):
+        return math.factorial(x)
+
+    def power(self, base, exponent):
+        return base ** exponent
+
+# Example Usage:
+calculator = AdvancedCalculator()
+result = calculator.add(5, 3)
+print(f"Addition: {result}")
+
+result = calculator.sin(30)
+print(f"Sine: {result}")
+
+result = calculator.power(2, 3)
+print(f"Power: {result}")
